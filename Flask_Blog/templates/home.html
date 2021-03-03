@@ -10,6 +10,11 @@
 
 <body>
     <h1> Home page! </h1>
+    {% for post in posts%}
+    <h1>{{ post.title }} </h1>
+    <p>By {{post.author}} on {{post.lov}} </p>
+    <p>{{post.content}}</p>
+    {% endfor %}
 </body>
 
 </html>
